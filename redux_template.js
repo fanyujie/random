@@ -23,3 +23,10 @@ const AllRedux=combineReducers(
     {...{/*singleredux*/},});
 
 export default AllRedux;
+
+
+//use
+import {useSelector} from 'react-redux'
+
+const xxx_state =useSelector(state =>(state.xxx/*singleredux_name*/))
+
