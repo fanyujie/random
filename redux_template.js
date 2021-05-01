@@ -26,7 +26,10 @@ export default AllRedux;
 
 
 //use
-import {useSelector} from 'react-redux'
+import {useSelector,useDispatch} from 'react-redux'
 
-const xxx_state =useSelector(state =>(state.xxx/*singleredux_name*/))
+const xxx_state =useSelector(state =>(state.xxx/*singleredux_name*/));
+
+const  xxx_dispatch = useDispatch();
+xxx_dispatch(/*your action*/); // (()=>({/*dict*/})) ()
 
