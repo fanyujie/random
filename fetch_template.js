@@ -21,6 +21,7 @@
                 var get=get_json.array;
                 console.log(get);
                 //console.log(getPageOffset);
+            }
                
 
         })
