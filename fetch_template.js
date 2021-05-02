@@ -29,3 +29,12 @@
             
         })
         .finally()
+       //when post
+       {
+               let params=
+                   {
+                           /*......*/
+                   };
+               
+               body:JSON.stringify(params);
+       }
