@@ -100,4 +100,3 @@
             infobox_ref.current.openWith("connect fail:"+error_);
         })
         .finally()
-        }
