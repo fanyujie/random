@@ -19,3 +19,20 @@ const Template=forwardRef(
   },
   
 )
+
+
+
+const FancyButton = React.forwardRef(({...props}, ref) => {
+
+      useImperativeHandle(ref,()=>({
+      funname:()=>{},//.....functions
+
+      }));
+      useEffect(
+      ()=>{
+        //....code
+      }
+      ,[/*...arg*/]);//....object to be listened
+  return (<div>{props.children}</div>);
+});
+
