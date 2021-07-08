@@ -1,11 +1,19 @@
-axios.post(`${process.env.REACT_APP_TEST_SERVER}/`,JSON.stringify({"array":_dataset})
+axios.post(`${process.env.REACT_APP_TEST_SERVER}/`,JSON.stringify(_json)
         )
         .then((res)=>{
-          toast.success("加载桥梁资料表成功")
+          
           let pack=res.data
-          let _array=pack.array;
-          setDataset(_array)
+          if(pack.state=="成功")
+          {
+                  toast.success("成功")
+          }
+          else
+          {
+                   toast.error("服务端失败")
+          }
+                  
+        
 
       }).catch((err)=>{
-        toast.error("加载桥梁资料表失败:"+err.toString())
+        toast.error("加载失败:"+err.toString())
       })
